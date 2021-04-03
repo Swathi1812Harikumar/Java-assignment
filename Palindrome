@@ -1,0 +1,27 @@
+import java.util.*;
+public class Palindrome
+	{
+	   public static boolean checkPalindrome(String a)
+	   {
+	      if(a.length() == 0 || a.length() == 1)
+	         return true; 
+	      if(a.charAt(0) == a.charAt(a.length() - 1))
+	         return checkPalindrome(a.substring(1, a.length() - 1));
+	      return false;
+	   }
+	   public static void main(String[]args)
+	   {
+	      Scanner s= new Scanner(System.in);
+	      System.out.println("Enter the string : ");
+	      String name = s.next();
+	     
+	      if(checkPalindrome(name))
+	      {
+	         System.out.println(name + " is  a palindrome");
+	      }
+	      else
+	      {
+	         System.out.println(name + " is not a palindrome");
+	      }
+	   }
+	}
