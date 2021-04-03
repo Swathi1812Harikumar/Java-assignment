@@ -1,0 +1,41 @@
+import java.util.*;
+public class StudentGrade  
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter no.of Subjects : ");
+        int n=s.nextInt();
+        int arr[]=new int[n];
+        System.out.println("Enter marks : ");
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=s.nextInt();  
+        }
+        int total=0;
+        for(int j=0;j<arr.length;j++)
+        {
+            total+=arr[j];
+        }
+        double Avg;
+        Avg=total/n;
+        System.out.println("Average : ");
+        System.out.println(Avg);
+        
+        if(Avg>=80)
+        {
+            System.out.println("Grade A");
+        }
+        else if(Avg>=60 && Avg <80)
+        {
+            System.out.println("Grade B");
+        }
+        else if(Avg>=40 && Avg <60)
+        {
+            System.out.println("Grade C");
+        }
+        else{
+            System.out.println("Grade D");
+        }
+    }
+}
