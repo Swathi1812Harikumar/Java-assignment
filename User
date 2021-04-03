@@ -1,0 +1,14 @@
+import java.util.*;
+public class User 
+{
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        int Intvalue=s.nextInt();
+        String Strvalue=s.nextLine();
+        float Floatvalue=s.nextFloat();
+        System.out.println("Integer value : "+Intvalue);
+     System.out.println("String value : "+Strvalue);
+     System.out.println("Float value : "+Floatvalue);
+    }
+}
